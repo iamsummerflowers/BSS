@@ -6,7 +6,7 @@ import logo from '../assets/logoBrain.svg'
 
 function Main() {
   return (
-    <div className="main">
+    <div className="main h-screen" id="home">
       <div className="mainSubheader">
         <h1>startDEV</h1>
         <img src={logo} alt="Logo"/>

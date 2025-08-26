@@ -25,7 +25,37 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
 
-    <title>startDev</title>
+    <!-- custom styles needed for background images and animations-->
+
+      <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .video-bg {
+            background-image: url('https://images.unsplash.com/photo-1551269901-5c5e14c25df7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80');
+        }
+        
+        .image-bg {
+            background-image: url('https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+        }
+        
+        .services-gradient {
+            background: linear-gradient(135deg, #2d3748, #4a5568, #718096);
+            background-size: 300% 300%;
+            animation: subtleShift 12s ease infinite;
+        }
+        
+        @keyframes subtleShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+
+    <!-- END -->
+
+    <title>Beyond Sight Solutions</title>
     <!-- fonts import -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

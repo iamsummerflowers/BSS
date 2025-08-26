@@ -6,7 +6,7 @@ import { VscGithub } from "react-icons/vsc";
 
 function Footer() {
     return (
-      <div className="footer">
+      <div className="footer" id="contact">
         <div className="footerLeft">
           <Link className="link" id="twos" to="https://www.theworksofsummer.com/" target="_blank" rel="noopener noreferrer">theworksofsummer.com</Link>
         </div>
