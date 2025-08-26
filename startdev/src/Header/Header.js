@@ -82,7 +82,7 @@ function Header({ scrollY, currentSection }) {
                                 onClick={() => scrollToSection(item.id)} 
                                 className={`block px-4 py-2 rounded cursor-pointer transition-all duration-300 ${
                                     currentSection === item.id 
-                                        ? 'text-red-400 bg-red-400 bg-opacity-10' 
+                                        ? 'text-red-400 bg-opacity-10' 
                                         : 'text-black hover:text-red-400 hover:bg-white hover:bg-opacity-10'
                                 }`}
                             >
