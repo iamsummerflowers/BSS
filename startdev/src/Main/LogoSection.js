@@ -1,17 +1,16 @@
 import React from 'react';
 import './LogoSection.css';
-import logo from '../assets/bss-logo.jpg'
-
+import logo from '../assets/bss-logo.jpg';
 
 function LogoSection() {
   return (
   <section 
-    className="h-fit flex items-center justify-center w-full mx-auto mt-12 bg-red-400 relative "
+    className="h-fit w-full max-w-full mx-auto mt-10 bg-none relative z-20 opacity-80"
     id="home">
       <img 
         src={logo}
         alt="company logo"
-        className = "z-10"
+        className = "z-10 relative h-full w-fit max-w-8xl p-8"
       />
       {/* <div className="text-center text-white z-10 px-4 sm:px-8"> */}
           {/* <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-4 font-bold leading-tight">Welcome to the Future</h1> */}

@@ -50,10 +50,11 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className=" font-sans leading-relaxed flex flex-col justify-center">
       <Header scrollY={scrollY} currentSection={currentSection}/>
       <LogoSection />
       <Video scrollY={scrollY} />
+      <AboutRabbit scrollY={scrollY} />
       <AboutRabbit scrollY={scrollY} />
       <Footer />
       <h1 className="text-3xl font-bold underline">Testing TailwindCSS</h1>
