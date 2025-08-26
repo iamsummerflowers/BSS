@@ -21,7 +21,7 @@ function Video({ scrollY }) {
 }, [scrollY]);
 
   return (
-    <section className="w-screen max-w-8xl min-h-80 h-5/6 flex flex-col align-center justify-center my-0 video-section bg-blue-400" id="about">
+    <section className="w-screen max-w-8xl min-h-80 h-5/6 flex flex-col align-center justify-center my-0 video-section bg-white" id="about">
         <video 
             ref={videoBgRef}
             className="absolute w-full h-80 mx-0 p-auto object-cover transition-transform duration-100 ease-out"

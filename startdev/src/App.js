@@ -6,6 +6,8 @@ import Header from './Header/Header.js';
 import LogoSection from './Main/LogoSection.js';
 import Video from './Main/Video.js';
 import AboutRabbit from './Main/AboutRabbit.js';
+import ServicesRabbit from './Main/ServicesRabbit.js';
+
 
 import Footer from './Footer/Footer.js';
 
@@ -55,7 +57,7 @@ function App() {
       <LogoSection />
       <Video scrollY={scrollY} />
       <AboutRabbit scrollY={scrollY} />
-      <AboutRabbit scrollY={scrollY} />
+      <ServicesRabbit />
       <Footer />
       <h1 className="text-3xl font-bold underline">Testing TailwindCSS</h1>
     </div>
