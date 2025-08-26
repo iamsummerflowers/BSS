@@ -3,7 +3,10 @@ import logo from './assets/logoBrain.svg';
 import './App.css';
 import { Link } from 'react-router-dom';
 import Header from './Header/Header.js';
-import Main from './Main/Main.js';
+import LogoSection from './Main/LogoSection.js';
+import Video from './Main/Video.js';
+import AboutRabbit from './Main/AboutRabbit.js';
+
 import Footer from './Footer/Footer.js';
 
 
@@ -49,9 +52,9 @@ function App() {
   return (
     <div className="App">
       <Header scrollY={scrollY} currentSection={currentSection}/>
-      <Main />
-      <Main />
-      <Main />
+      <LogoSection />
+      <Video scrollY={scrollY} />
+      <AboutRabbit scrollY={scrollY} />
       <Footer />
       <h1 className="text-3xl font-bold underline">Testing TailwindCSS</h1>
     </div>

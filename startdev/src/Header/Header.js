@@ -34,7 +34,7 @@ function Header({ scrollY, currentSection }) {
         }}
     >
         <div className="flex justify-between items-center max-w-7xl mx-auto">
-            <div className="text-xl sm:text-2xl font-bold text-black text-left">Beyond Sight Solutions</div>
+            <div className="text-xl sm:text-2xl font-bold text-black text-left">Results Delivered</div>
             
             {/* Desktop Menu */}
             <ul className="hidden md:flex space-x-8">
