@@ -14,7 +14,7 @@ function Video({ scrollY }) {
         const videoRect = videoSection.getBoundingClientRect();
         
         if (videoRect.top < window.innerHeight && videoRect.bottom > 0) {
-            const videoOffset = (window.innerHeight - videoRect.top) * 0.4;
+            const videoOffset = (window.innerHeight - videoRect.top) * 0.2;
             videoBgRef.current.style.transform = `translateY(${-videoOffset}px)`;
         }
     }
