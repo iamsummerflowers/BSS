@@ -89,7 +89,7 @@ function ServiceGrid({ onGetQuote }) {
     ];
 
   return (
-    <section id="services" className="py-20 bg-gray-50">
+    <section id="grid" className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
             <div className="text-center mb-16">
                 <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">

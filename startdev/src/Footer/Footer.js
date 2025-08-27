@@ -1,6 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import { VscGithub } from "react-icons/vsc";
 
 
@@ -36,29 +37,29 @@ function Footer() {
                   <div>
                       <h3 className="text-lg font-semibold text-white mb-4">Services</h3>
                       <div className="space-y-2">
-                          <a href="#" className="block text-slate-300 hover:text-white transition-colors">Web Design</a>
-                          <a href="#" className="block text-slate-300 hover:text-white transition-colors">Development</a>
-                          <a href="#" className="block text-slate-300 hover:text-white transition-colors">UX/UI Design</a>
-                          <a href="#" className="block text-slate-300 hover:text-white transition-colors">Digital Strategy</a>
+                          <HashLink smooth to="/services/#grid" target="_self" rel="noopener noreferrer" className="block text-slate-300 hover:text-white transition-colors">Web Design</HashLink>
+                          <HashLink smooth to="/services/#grid" target="_self" rel="noopener noreferrer" className="block text-slate-300 hover:text-white transition-colors">Development</HashLink>
+                          <HashLink smooth to="/services/#grid" target="_self" rel="noopener noreferrer" className="block text-slate-300 hover:text-white transition-colors">UX/UI Design</HashLink>
+                          <HashLink smooth to="/services/#grid" target="_self" rel="noopener noreferrer" className="block text-slate-300 hover:text-white transition-colors">Digital Strategy</HashLink>
                       </div>
                   </div>
                   
                   <div>
                       <h3 className="text-lg font-semibold text-white mb-4">Company</h3>
                       <div className="space-y-2">
-                          <a href="#" className="block text-slate-300 hover:text-white transition-colors">About Us</a>
-                          <a href="#" className="block text-slate-300 hover:text-white transition-colors">Our Team</a>
+                          <HashLink smooth to="/about/#mission" target="_self" rel="noopener noreferrer" className="block text-slate-300 hover:text-white transition-colors">About Us</HashLink>
+                          <HashLink smooth to="/about/#team" target="_self" rel="noopener noreferrer" className="block text-slate-300 hover:text-white transition-colors">Our Team</HashLink>
                           {/* <a href="#" className="block text-slate-300 hover:text-white transition-colors">Careers</a> */}
-                          <a href="#" className="block text-slate-300 hover:text-white transition-colors">Contact</a>
+                          <HashLink smooth to="#contact" target="_self" rel="noopener noreferrer" className="block text-slate-300 hover:text-white transition-colors">Contact</HashLink>
                       </div>
                   </div>
                   
                   <div>
                       <h3 className="text-lg font-semibold text-white mb-4">Contact</h3>
                       <div className="space-y-2 text-slate-300">
-                          <p>📧 <a href="mailto:hello@parallaxsite.com" className="hover:text-white transition-colors">hello@parallaxsite.com</a></p>
-                          <p>📞 +1 (555) 123-4567</p>
-                          <p>📍Houston, TX</p>
+                          <p className="flex">support@bss.com</p>
+                          {/* <p>📞 +1 (555) 123-4567</p> */}
+                          <p>Houston, TX</p>
                       </div>
                   </div>
               </div>
