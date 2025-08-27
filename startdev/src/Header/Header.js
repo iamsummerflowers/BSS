@@ -45,7 +45,7 @@ function Header({ scrollY, currentSection }) {
             <ul className="hidden md:flex space-x-8">
                 {navItems.map((item) => (
                     <li key={item.id}>
-                        <a 
+                        <Link 
                             onClick={() => handleNavigation(item)}
                             className={`relative cursor-pointer transition-all duration-300 ${
                                 currentSection === item.id && item.type === 'section'
@@ -57,7 +57,7 @@ function Header({ scrollY, currentSection }) {
                             {currentSection === item.id && item.type === 'section' && (
                                 <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-red-400 transition-all duration-300"></span>
                             )}
-                        </a>
+                        </Link>
                     </li>
                 ))}
             </ul>
@@ -83,7 +83,7 @@ function Header({ scrollY, currentSection }) {
                 <ul className="flex flex-col space-y-2">
                     {navItems.map((item) => (
                         <li key={item.id}>
-                            <a 
+                            <Link
                                 onClick={() => handleNavigation(item)} 
                                 className={`block px-4 py-2 rounded cursor-pointer transition-all duration-300 ${
                                     currentSection === item.id && item.type === 'section' 
@@ -92,7 +92,7 @@ function Header({ scrollY, currentSection }) {
                                 }`}
                             >
                                 {item.label}
-                            </a>
+                            </Link>
                         </li>
                     ))}
                 </ul>
