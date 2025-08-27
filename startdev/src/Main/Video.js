@@ -39,6 +39,7 @@ function Video({ scrollY }) {
         {/* Fallback background image if video fails to load */}
         {/* <div className="video-bg absolute w-full h-full bg-cover bg-center bg-no-repeat opacity-0"></div> */}
         {/* <div className="absolute inset-0 bg-black bg-opacity-40"></div> */}
+        
         <div className="relative z-20 text-center text-black my-auto px-4 sm:px-8 bg-none" >
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4 font-bold leading-tight">IDENTIFY | ASSESS | RESOLVE | GROW</h2>
             <p className="text-base sm:text-lg md:text-xl opacity-90 max-w-2xl mx-auto">Let's Solve It Together.</p>

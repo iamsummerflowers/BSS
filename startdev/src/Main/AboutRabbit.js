@@ -53,7 +53,7 @@ function AbboutRabbit({ scrollY }) {
                 </p>
                 <button 
                     onClick={handleLearnMore}
-                    className="bg-blue-900 hover:bg-red-400 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition-all duration-300 hover:-translate-y-1 w-full sm:w-auto"
+                    className="bg-blue-900 hover:bg-red-400 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md font-semibold transition-all duration-300 hover:-translate-y-1 w-full sm:w-auto"
                 >
                     Read More
                 </button>

@@ -18,9 +18,9 @@ function ServicesRabbit() {
             <p className="text-base sm:text-lg md:text-xl mb-8 opacity-90 max-w-2xl mx-auto">Feel free to check out the many ways Beyond Sight Solutions can best serve your business.</p>
             <button 
                 onClick={handleViewServices}
-                className="bg-green-900 hover:bg-green-100 hover:text-black text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold transition-all duration-300 hover:-translate-y-1 w-full sm:w-auto"
+                className="bg-green-900 hover:bg-green-100 hover:text-black text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md font-semibold transition-all duration-300 hover:-translate-y-1 w-full sm:w-auto"
             >
-                Take A Look!
+                Take a Look!
             </button>
         </div>
     </section>

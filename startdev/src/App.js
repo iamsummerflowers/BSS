@@ -52,14 +52,13 @@ function App() {
   }, []);
 
   return (
-    <div className=" font-sans leading-relaxed flex flex-col justify-center">
+    <div className="bg-white font-sans leading-relaxed flex flex-col justify-center">
       <Header scrollY={scrollY} currentSection={currentSection}/>
       <LogoSection />
       <Video scrollY={scrollY} />
       <AboutRabbit scrollY={scrollY} />
       <ServicesRabbit />
       <Footer />
-      <h1 className="text-3xl font-bold underline">Testing TailwindCSS</h1>
     </div>
   );
 }
