@@ -7,6 +7,8 @@ import LogoSection from './Main/LogoSection.js';
 import Video from './Main/Video.js';
 import AboutRabbit from './Main/AboutRabbit.js';
 import ServicesRabbit from './Main/ServicesRabbit.js';
+import Contact from './Contact/Contact.js';
+
 
 
 import Footer from './Footer/Footer.js';
@@ -58,6 +60,7 @@ function App() {
       <Video scrollY={scrollY} />
       <AboutRabbit scrollY={scrollY} />
       <ServicesRabbit />
+      <Contact />
       <Footer />
     </div>
   );
