@@ -1,0 +1,23 @@
+:root {
+
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+
+/* Tablet */
+
+@media (min-width: 768px) {
+
+
+}
+
+/* Laptop */
+
+@media (min-width: 888px) {
+
+
+}

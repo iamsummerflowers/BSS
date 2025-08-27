@@ -194,7 +194,7 @@ function ContactForm() {
                 // value={formData.message}
                 // onChange={handleInputChange}
                 required
-                placeholder="Tell me about your project goals, timeline, and challenges..."
+                placeholder="Tell us about your project, goals, budget, and any specific requirements..."
                 // className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-colors resize-none 
                 //     ${errors.message ? 'border-red-500' : 'border-gray-300'}`
                 className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-colors resize-none`
