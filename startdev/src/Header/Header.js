@@ -24,7 +24,7 @@ function Header({ scrollY, currentSection }) {
   };
 
   const navItems = [
-      { id: 'home', label: 'Home', type: 'section' },
+      { id: 'home', label: 'Home', type: 'page', url: '/' },
       { id: 'about', label: 'About', type: 'page', url: '/about' },
       { id: 'services', label: 'Services', type: 'page', url: '/services' },
       { id: 'contact', label: 'Contact', type: 'section' }
