@@ -46,6 +46,7 @@ function Header({ scrollY, currentSection }) {
                 {navItems.map((item) => (
                     <li key={item.id}>
                         <Link 
+                            to={item.url}
                             onClick={() => handleNavigation(item)}
                             className={`relative cursor-pointer transition-all duration-300 ${
                                 currentSection === item.id && item.type === 'section'
@@ -84,6 +85,7 @@ function Header({ scrollY, currentSection }) {
                     {navItems.map((item) => (
                         <li key={item.id}>
                             <Link
+                                to={item.url}
                                 onClick={() => handleNavigation(item)} 
                                 className={`block px-4 py-2 rounded cursor-pointer transition-all duration-300 ${
                                     currentSection === item.id && item.type === 'section' 
