@@ -6,23 +6,28 @@ function Header({ scrollY, currentSection }) {
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const scrollToSection = (sectionId) => {
-      const element = document.getElementById(sectionId);
-      if (element) {
-          const offsetTop = element.offsetTop - 80;
-          window.scrollTo({
-              top: offsetTop,
-              behavior: 'smooth'
-          });
+  const handleNavigation = (item) => {
+      if (item.type === 'section') {
+          const element = document.getElementById(item.id);
+          if (element) {
+              const offsetTop = element.offsetTop - 80;
+              window.scrollTo({
+                  top: offsetTop,
+                  behavior: 'smooth'
+              });
+          }
+      } else if (item.type === 'page') {
+          // Navigate to external page
+          window.location.href = item.url;
       }
       setIsMobileMenuOpen(false); // Close mobile menu after navigation
   };
 
   const navItems = [
-      { id: 'home', label: 'Home' },
-      { id: 'about', label: 'About' },
-      { id: 'services', label: 'Services' },
-      { id: 'contact', label: 'Contact' }
+      { id: 'home', label: 'Home', type: 'section' },
+      { id: 'about', label: 'About', type: 'page', url: '/about' },
+      { id: 'services', label: 'Services', type: 'page', url: '/services' },
+      { id: 'contact', label: 'Contact', type: 'section' }
   ];
 
 
@@ -41,15 +46,15 @@ function Header({ scrollY, currentSection }) {
                 {navItems.map((item) => (
                     <li key={item.id}>
                         <a 
-                            onClick={() => scrollToSection(item.id)} 
+                            onClick={() => handleNavigation(item)}
                             className={`relative cursor-pointer transition-all duration-300 ${
-                                currentSection === item.id 
+                                currentSection === item.id && item.type === 'section'
                                     ? 'text-red-400' 
                                     : 'text-black hover:text-red-400'
                             }`}
                         >
                             {item.label}
-                            {currentSection === item.id && (
+                            {currentSection === item.id && item.type === 'section' && (
                                 <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-red-400 transition-all duration-300"></span>
                             )}
                         </a>
@@ -79,9 +84,9 @@ function Header({ scrollY, currentSection }) {
                     {navItems.map((item) => (
                         <li key={item.id}>
                             <a 
-                                onClick={() => scrollToSection(item.id)} 
+                                onClick={() => handleNavigation(item)} 
                                 className={`block px-4 py-2 rounded cursor-pointer transition-all duration-300 ${
-                                    currentSection === item.id 
+                                    currentSection === item.id && item.type === 'section' 
                                         ? 'text-red-400 bg-opacity-10' 
                                         : 'text-black hover:text-red-400 hover:bg-white hover:bg-opacity-10'
                                 }`}
