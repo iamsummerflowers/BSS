@@ -32,7 +32,7 @@ function Story() {
                 <div className="grid grid-cols-2 gap-6">
                     {stats.map((stat, index) => (
                         <div key={index} className="bg-white p-6 rounded-xl shadow-lg text-center">
-                            <div className="text-3xl font-bold text-indigo-500 mb-2">
+                            <div className="text-3xl font-bold text-slate-600 mb-2">
                                 {stat.number}
                             </div>
                             <div className="text-slate-600 text-sm">

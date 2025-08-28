@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Vision() {
 
   return (
-    <section id="vision" className="min-h-screen bg-gradient-to-br from-slate-800 to-slate-600 flex items-center relative">
+    <section id="vision" className="py-24 bg-yellow-800 flex items-center relative">
         <div className="absolute inset-0 bg-black/30"></div>
         <div className="max-w-6xl mx-auto px-8 text-white relative z-10">
             <div className="text-right">
