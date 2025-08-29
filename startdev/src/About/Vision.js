@@ -10,12 +10,15 @@ function Vision() {
         <div className="max-w-6xl mx-auto px-8 text-white relative z-10">
             <div className="text-right">
                 <h2 className="text-4xl md:text-5xl font-bold mb-8">Our Vision</h2>
-                <div className="max-w-4xl ml-auto">
+                <div className="max-w-4xl ml-auto text-left">
                     <p className="text-lg leading-relaxed mb-6">
-                        We envision a digital future where every interaction is meaningful, every experience is memorable, and every website tells a compelling story. Our goal is to be at the forefront of this transformation, leading the industry with innovative solutions that set new standards for web excellence.
+                        We see a future where Beyond Sight Solutions stands as the trusted partner for visionaries at every stage of their journey
+                         – where our collaborative problem-solving approach becomes the <strong>gold standard for business transformation</strong>,
+                         and where our digital solutions are recognized not just for their aesthetic appeal but for their <strong>tangible contribution to business growth and sustainability.</strong>
                     </p>
                     <p className="text-lg leading-relaxed">
-                        By 2030, we aim to have revolutionized how businesses connect with their audiences online, making the web a more engaging, accessible, and beautiful place for everyone.
+                        In this future, we've built a diverse global team united by our passion for solving complex challenges, celebrating the unique perspectives that lead to breakthrough solutions, 
+                        and maintaining our founding commitment to integrity and excellence even as we scale.
                     </p>
                 </div>
             </div>

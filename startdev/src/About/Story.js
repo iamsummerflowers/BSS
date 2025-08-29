@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom';
 function Story() {
 
     const stats = [
-        { number: '500+', label: 'Projects Completed' },
-        { number: '150+', label: 'Happy Clients' },
+        { number: '50+', label: 'Projects Completed' },
+        { number: '92%', label: 'Client Retention Rate' },
         { number: '4.9', label: 'Average Rating' },
-        { number: '24/7', label: 'Support Available' }
+        { number: '20+', label: 'Insutries Served' }
     ];
 
   return (
@@ -19,13 +19,16 @@ function Story() {
                     <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-8">Our Story</h2>
                     <div className="space-y-6 text-slate-600">
                         <p className="text-lg leading-relaxed">
-                            Founded in 2020, ParallaxSite emerged from a simple observation: the web had become predictable. While technology advanced rapidly, most websites felt static and disconnected from their users.
+                            Founded in 2020, Beyond Sight Solutions emerged from a simple, intuitive observation: good ideas should always come to fruition. 
+                            It was also observed that, in addition to foundational understanding, businesses need both compelling digital presence and sustainable growth strategies to truly succeed. 
+                            {/* While many agencies focused solely on aesthetics or profitability, we recognized the power of balancing research, technology, and strategic growth. */}
                         </p>
                         <p className="text-lg leading-relaxed">
-                            We set out to change that. Starting with a small team of passionate designers and developers, we began experimenting with parallax effects, interactive animations, and immersive storytelling techniques.
+                            We built our company at the intersections of creativity, technology, and business.
+                            Our team combines expertise in immersive digital experiences with deep knowledge of business viability assessment, market analysis, and strategic planning.
                         </p>
                         <p className="text-lg leading-relaxed">
-                            Today, we're proud to have helped hundreds of businesses create digital experiences that truly engage their audiences and drive meaningful results.
+                            Today, we're proud of the organizations we’ve helped not only create engaging digital experiences but also develop viable business models that drive meaningful long-term results.
                         </p>
                     </div>
                 </div>
