@@ -7,19 +7,45 @@ import ServiceCard from './ServiceCard.js';
 
 function ServiceGrid({ onGetQuote }) {
 
-    const services = [
+ const services = [
+        {
+            icon: '💼',
+            title: 'Viability Assessment',
+            description: 'Comprehensive analysis and planning to ensure your business idea is viable and set for success.',
+            features: [
+                'Market research',
+                'Competitive analysis',
+                'Financial projections',
+                'Risk assessment',
+                'Growth strategy'
+            ],
+            price: 'Starting at $2,000'
+        },
         {
             icon: '🎨',
-            title: 'Web Design & Branding',
-            description: 'Complete visual identity and website design that captures your brand essence and engages your audience.',
+            title: 'UI/UX Research & Design',
+            description: 'User-centered design process that creates intuitive, engaging interfaces based on thorough research.',
             features: [
-                'Custom website design',
-                'Brand identity development',
-                'Logo and visual assets',
-                'Style guide creation',
-                'Responsive design'
+                'User research',
+                'Wireframing',
+                'Prototyping',
+                'Usability testing',
+                'Visual design'
             ],
-            price: 'Starting at $2,500'
+            price: 'Starting at $3,500'
+        },
+        {
+            icon: '🚀',
+            title: 'Website Development',
+            description: 'Complete website development with modern features, CMS integration, and ongoing support.',
+            features: [
+                'Custom development',
+                'CMS integration',
+                'E-commerce functionality',
+                'Database design',
+                '3 months support'
+            ],
+            price: 'Starting at $4,500'
         },
         {
             icon: '⚡',
@@ -35,32 +61,6 @@ function ServiceGrid({ onGetQuote }) {
             price: 'Starting at $1,200'
         },
         {
-            icon: '🚀',
-            title: 'Full Website Development',
-            description: 'Complete website development with modern features, CMS integration, and ongoing support.',
-            features: [
-                'Custom development',
-                'CMS integration',
-                'E-commerce functionality',
-                'Database design',
-                '3 months support'
-            ],
-            price: 'Starting at $4,500'
-        },
-        {
-            icon: '📱',
-            title: 'Mobile App Development',
-            description: 'Native and cross-platform mobile applications that extend your digital reach to smartphones and tablets.',
-            features: [
-                'iOS & Android apps',
-                'Cross-platform development',
-                'App store optimization',
-                'Push notifications',
-                'Analytics integration'
-            ],
-            price: 'Starting at $8,000'
-        },
-        {
             icon: '🔧',
             title: 'Maintenance & Support',
             description: 'Ongoing website maintenance, security updates, and technical support to keep your site running smoothly.',
@@ -74,17 +74,17 @@ function ServiceGrid({ onGetQuote }) {
             price: '$200/month'
         },
         {
-            icon: '📊',
-            title: 'Digital Strategy & Consulting',
-            description: 'Strategic guidance and consulting to help you make informed decisions about your digital presence.',
+            icon: '📣',
+            title: 'Digital Marketing Strategy',
+            description: 'Comprehensive digital marketing strategies to increase your online visibility and drive targeted traffic.',
             features: [
-                'Digital strategy planning',
-                'Technology consulting',
-                'User experience audit',
-                'Competitive analysis',
-                'Growth recommendations'
+                'SEO optimization',
+                'Content marketing',
+                'Social media management',
+                'PPC advertising',
+                'Email marketing campaigns'
             ],
-            price: '$150/hour'
+            price: 'Starting at $1,800/month'
         }
     ];
 
@@ -93,10 +93,10 @@ function ServiceGrid({ onGetQuote }) {
         <div className="max-w-6xl mx-auto px-6">
             <div className="text-center mb-16">
                 <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                    Choose Your Perfect Solution
+                    What do you need help with?
                 </h2>
                 <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Whether you're a startup or an established business, we have the right package to elevate your online presence.
+                    Choose a package best suited for what you're trying to tackle!
                 </p>
             </div>
             

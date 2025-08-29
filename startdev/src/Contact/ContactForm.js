@@ -208,7 +208,7 @@ function ContactForm() {
             value="Send"
             id="send"
             // disabled={isSubmitting}
-            className="w-full bg-emerald-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-emerald-700 transition-colors flex items-center justify-center disabled:opacity-50"
+            className="w-full bg-green-700 text-white py-3 px-6 rounded-lg font-semibold hover:bg-green-800 transition-colors flex items-center justify-center disabled:opacity-50"
         >
             {isSubmitting ? (
                 <>

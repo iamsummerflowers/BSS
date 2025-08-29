@@ -24,6 +24,12 @@ function Services() {
       });
   };
 
+  const scrollToGrid = () => {
+    document.getElementById('grid')?.scrollIntoView({ 
+        behavior: 'smooth' 
+    });
+  };
+
   const handleGetQuote = (serviceName) => {
       // Pre-fill the service in the consultation form
       const serviceSelect = document.querySelector('select[name="service"]');
@@ -44,7 +50,7 @@ function Services() {
   return (
     <div>
         <Header />
-        <ServiceHero onGetStarted={scrollToConsultation}/>
+        <ServiceHero onGetStarted={scrollToGrid}/>
         <ServiceGrid onGetQuote={handleGetQuote}/>
         <Contact />
         <Footer />

@@ -47,6 +47,7 @@ function Footer() {
                   <div>
                       <h3 className="text-lg font-semibold text-white mb-4">Company</h3>
                       <div className="space-y-2">
+                          <HashLink smooth to="/" target="_self" rel="noopener noreferrer" className="block text-slate-300 hover:text-white transition-colors">Home</HashLink>
                           <HashLink smooth to="/about/#mission" target="_self" rel="noopener noreferrer" className="block text-slate-300 hover:text-white transition-colors">About Us</HashLink>
                           <HashLink smooth to="/about/#team" target="_self" rel="noopener noreferrer" className="block text-slate-300 hover:text-white transition-colors">Our Team</HashLink>
                           {/* <a href="#" className="block text-slate-300 hover:text-white transition-colors">Careers</a> */}

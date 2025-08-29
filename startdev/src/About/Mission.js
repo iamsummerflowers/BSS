@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Mission() {
 
   return (
-    <section className="h-screen bg-red-400 flex items-center relative">
+    <section className="h-screen bg-blue-400 flex items-center relative">
         <div className="absolute inset-0 bg-black/30"></div>
         <div className="max-w-6xl mx-auto px-8 text-white relative z-10">
             <h2 className="text-4xl md:text-5xl font-bold mb-8">OUR MISSION</h2>
