@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './AbboutRabbit.css';
 import rubix from '../assets/olav-ahrens.jpg';
+import { Link } from 'react-router-dom';
+
 
 
 function AbboutRabbit({ scrollY }) {
@@ -52,10 +54,10 @@ function AbboutRabbit({ scrollY }) {
                   Our company provides tailored and affordable services aimed to help your business save time, resources, and energy as you navigate towards your intended vision. 
                 </p>
                 <button 
-                    onClick={handleLearnMore}
+                    // onClick={handleLearnMore}
                     className="bg-blue-900 hover:bg-red-400 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md font-semibold transition-all duration-300 hover:-translate-y-1 w-full sm:w-auto"
                 >
-                    Read More
+                    <Link to="./about">Read More</Link>
                 </button>
             </div>
         </div>

@@ -12,7 +12,7 @@ function Story() {
     ];
 
   return (
-    <section className="bg-slate-50 py-24">
+    <section className="bg-slate-50 py-24" id="about">
         <div className="max-w-6xl mx-auto px-8">
             <div className="grid md:grid-cols-2 gap-16 items-center">
                 <div>
