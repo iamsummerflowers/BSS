@@ -1,6 +1,6 @@
 import React from 'react';
 import './LogoSection.css';
-import logo from '../assets/bss-logo.jpg';
+import logo from '../assets/logoalt3.jpg';
 
 function LogoSection() {
   return (
@@ -10,7 +10,7 @@ function LogoSection() {
       <img 
         src={logo}
         alt="company logo"
-        className = "z-10 relative h-full w-fit max-w-8xl p-1 rounded-xl mt-8"
+        className = "z-10 relative h-full p-1 rounded-xl mt-8 object-cover"
       />
       {/* <div className="text-center text-white z-10 px-4 sm:px-8"> */}
           {/* <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-4 font-bold leading-tight">Welcome to the Future</h1> */}

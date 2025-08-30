@@ -56,7 +56,7 @@ function App() {
   return (
     <div className="bg-white font-sans leading-relaxed flex flex-col justify-center">
       <Header scrollY={scrollY} currentSection={currentSection}/>
-      <LogoSection />
+      {/* <LogoSection /> */}
       <Video scrollY={scrollY} />
       <AboutRabbit scrollY={scrollY} />
       <ServicesRabbit />

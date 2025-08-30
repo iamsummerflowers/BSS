@@ -14,7 +14,7 @@ function Team() {
         },
         {
             icon: '🎨',
-            title: 'UI/UX Design Team',
+            title: 'UI/UX Designers',
             description: 'Creative visionaries who combine aesthetic vision with user psychology to create interfaces that delight and perform. Our design team focuses on user experience, brand identity, and creating memorable digital experiences that engage and convert.',
             skills: ['UI/UX Design', 'Brand Identity', 'Prototyping', 'Design Systems']
         },

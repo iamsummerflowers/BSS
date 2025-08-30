@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './Video.css';
 import video from '../assets/ami-Bornstein.mp4';
+import logo from '../assets/logoalt3.jpg';
+
 
 
 
@@ -14,18 +16,18 @@ function Video({ scrollY }) {
         const videoRect = videoSection.getBoundingClientRect();
         
         if (videoRect.top < window.innerHeight && videoRect.bottom > 0) {
-            const videoOffset = (window.innerHeight - videoRect.top) * 0.2;
+            const videoOffset = (window.innerHeight - videoRect.top) *0.3;
             videoBgRef.current.style.transform = `translateY(${-videoOffset}px)`;
         }
     }
 }, [scrollY]);
 
   return (
-    <section className="w-screen max-w-8xl min-h-80 h-5/6 flex flex-col align-center justify-center my-0 video-section bg-white" id="home">
+    <section className="relative w-screen max-w-8xl min-h-80 h-full flex flex-col align-center justify-center my-0 video-section bg-white relative" id="about">
         <video 
             ref={videoBgRef}
-            className="absolute w-full h-80 mx-0 p-auto object-cover transition-transform duration-100 ease-out"
-            style={{ minWidth: '100%', minHeight: '100%' }}
+            className="absolute w-full h-screen mx-0 p-auto object-cover my-auto transition-transform duration-100 ease-out"
+            style={{ minWidth: '100%', minHeight: '250%' }}
             autoPlay
             muted
             loop
@@ -39,8 +41,20 @@ function Video({ scrollY }) {
         {/* Fallback background image if video fails to load */}
         {/* <div className="video-bg absolute w-full h-full bg-cover bg-center bg-no-repeat opacity-0"></div> */}
         {/* <div className="absolute inset-0 bg-black bg-opacity-40"></div> */}
-        
-        <div className="relative z-20 text-center text-black my-auto px-4 sm:px-8 bg-none" >
+        <section 
+            className="h-fit w-full max-w-full mx-auto mt-10 bg-none relative z-20 opacity-80 "
+            id="home">
+            <img 
+                src={logo}
+                alt="company logo"
+                className = "z-10 relative h-full p-1 rounded-xl mt-8 object-cover"
+            />
+            {/* <div className="text-center text-white z-10 px-4 sm:px-8"> */}
+                {/* <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-4 font-bold leading-tight">Welcome to the Future</h1> */}
+                {/* <p className="text-lg sm:text-xl md:text-2xl opacity-90 max-w-2xl mx-auto">Experience the power of parallax scrolling</p> */}
+            {/* </div> */}
+        </section>
+        <div className="relative z-20 text-center text-black my-40 px-4 sm:px-8 bg-none" >
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4 font-bold leading-tight">IDENTIFY | ASSESS | RESOLVE | GROW</h2>
             <p className="text-base sm:text-lg md:text-xl opacity-90 max-w-2xl mx-auto">Let's Solve It Together.</p>
         </div>
